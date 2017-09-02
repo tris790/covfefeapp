@@ -1,0 +1,13 @@
+{
+  "name": "covfefe",
+  "version": "1.0.0",
+  "description": "Have fun with Trump",
+  "main": "server.js",
+  "author": "Tristan Deschamps & Gabriele Sarti",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
+  }
+}
