@@ -1,9 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html class="mdc-typography">
 
-<head></head>
+<head>
+    <title>Material Components for the web</title>
+    <link rel="stylesheet" href="css/material-components-web/dist/material-components-web.css">
+    <script src="js/twitter.js" type="text/javascript"></script>
+</head>
 
 <body>
-    <h1>Other</h1>
+    <h2 class="mdc-typography--display2">Hello, Material Components!</h2>
+    <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+        <input type="text" class="mdc-textfield__input" id="demo-input">
+        <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+    </div>
+    <div id="tweets"></div>
+    <script src="css/material-components-web/dist/material-components-web.js"></script>
+    <script>
+        mdc.autoInit()
+        loadTweets();
+    </script>
 </body>
 
 </html>

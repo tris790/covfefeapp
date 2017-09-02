@@ -1,5 +1,13 @@
-/* Buttons */
+/* Global */
+body {
+  background: #e6ecf0;
+  color: #14171a;
+  font-size: 14px;
+  line-height: 20px;
+  overflow-y: scroll;
+}
 
+/* Buttons */
 .twitter-btn {
   background-color: #4ab3f4;
   border-color: transparent;
@@ -30,8 +38,11 @@
 }
 
 /* Text */
+* {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
 .twitter-text {
   color: white;
   font-size: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
