@@ -10,9 +10,11 @@
 
 <b>git clone</b> https://github.com/tris790/covfefeapp.git 
 </br>
+<b>npm</b> install
+</br>
 <b>node</b> server.js
 </br>
-<b>Goto: </b>http://localhost:3000/fetch
+<b>Goto:</b> http://localhost:3000/fetch
 </br>
 
 ## Contributors

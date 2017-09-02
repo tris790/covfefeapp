@@ -1,0 +1,37 @@
+/* Buttons */
+
+.twitter-btn {
+  background-color: #4ab3f4;
+  border-color: transparent;
+
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.twitter-btn:hover {
+  background-color: #1da1f2;
+  /* border-color: #1da1f2; */
+}
+
+.twitter-btn:active {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #4ab3f4;
+}
+
+.twitter-btn:focus {
+  outline: none;
+}
+
+/* Text */
+.twitter-text {
+  color: white;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
