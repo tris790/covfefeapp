@@ -1,0 +1,16 @@
+{
+  "short_name": "Covfefe",
+  "name": "Covfefe app",
+  "theme_color": "#4ab3f4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "other.html?launcher=true"
+}

@@ -2,13 +2,13 @@
 <html class="mdc-typography">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4ab3f4">
     <title>Preview</title>
-    <link rel="stylesheet" href="css/material-components-web/dist/material-components-web.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/material-components-web/dist/material-components-web.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" type="text/javascript"></script>
-    <script src="js/twitter.js" type="text/javascript"></script>
-    <script src="js/chart.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -23,17 +23,16 @@
         </div>
     </div>
     <div id="tweets"></div>
-    <div class="chart-container" style="position: relative; height:40vh; width:40vw">
+    <div class="chart-container" style="position: relative; width:80%;">
         <canvas id="myChart"></canvas>
     </div>
-    <script src="css/material-components-web/dist/material-components-web.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" type="text/javascript"></script>
+    <script src="js/twitter.js" type="text/javascript"></script>
+    <script src="js/chart.js" type="text/javascript"></script>
+    <script src="css/material-components-web/dist/material-components-web.min.js"></script>
     <script>
         mdc.autoInit();
         loadTweets();
-
-        // const dataset = findMostCommon(
-        //     ["this", "is", "sample", "text", "hi", "my", "name", "is", "bob", "I", "like", "text,", "text", ",text"]
-        // );
     </script>
 </body>
 
