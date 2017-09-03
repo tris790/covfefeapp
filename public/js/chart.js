@@ -17,7 +17,7 @@ const findMostCommon = (arr, number, wordLength, removeShort) => {
 const tweetsToOneString = tweets => {
   return tweets
     .map(t => {
-      return t.text;
+      return t.full_text;
     })
     .join(" ")
     .split(/\W+/);

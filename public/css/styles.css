@@ -1,11 +1,11 @@
 /* Global */
-body {
+/* body {
   background: #e6ecf0;
   color: #14171a;
   font-size: 14px;
   line-height: 20px;
   overflow-y: scroll;
-}
+} */
 
 /* Buttons */
 .twitter-btn {
@@ -45,4 +45,20 @@ body {
 .twitter-text {
   color: white;
   font-size: 15px;
+}
+
+a {
+  color: #1b95e0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-color: #1b95e0;
+  text-decoration: underline;
+}
+
+/*Image*/
+.mdc-car__avatar {
+  border-radius: 25px;
+  margin-right: 25px;
 }

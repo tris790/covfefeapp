@@ -27,7 +27,7 @@ class TwitterClient {
     const count = postCount ? `&count=${postCount}` : "";
     console.log(this.bearerToken);
     return await request({
-      uri: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=realdonaldtrump&exclude_replies=true&include_rts=false${max}${count}`,
+      uri: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=realdonaldtrump&exclude_replies=true&include_rts=false&tweet_mode=extended${max}${count}`,
       headers: {
         Authorization: this.bearerToken
       },
