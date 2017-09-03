@@ -1,5 +1,5 @@
 const fetchTweets = async () => {
-  const res = await fetch("/fetch?count=5");
+  const res = await fetch("/fetch?count=125");
   return (parsedRes = await res.json());
 };
 
@@ -22,9 +22,23 @@ const createCardFromTweet = tweet => {
 };
 
 const loadTweets = () => {
-  fetchTweets().then(data => {
-    console.log(data);
+  const req = fetchTweets().then(data => {
+    // Affichage des tweets
     const tweetResult = data.content.map(tweet => createCardFromTweet(tweet));
     document.getElementById("tweets").innerHTML = tweetResult.join("");
+
+    // Display chart
+    const mostCommon = findMostCommon(
+      tweetsToOneString(data.content),
+      25,
+      4,
+      true
+    );
+
+    initChart({
+      id: "myChart",
+      data: mostCommon.map(x => x[1]),
+      labels: mostCommon.map(x => x[0])
+    });
   });
 };

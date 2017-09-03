@@ -2,22 +2,31 @@
 <html class="mdc-typography">
 
 <head>
-    <title>Material Components for the web</title>
+    <title>Preview</title>
     <link rel="stylesheet" href="css/material-components-web/dist/material-components-web.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" type="text/javascript"></script>
     <script src="js/twitter.js" type="text/javascript"></script>
+    <script src="js/chart.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <h2 class="mdc-typography--display2">Hello, Material Components!</h2>
+    <h2 class="mdc-typography--display2">This is only a demo</h2>
     <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
         <input type="text" class="mdc-textfield__input" id="demo-input">
-        <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
     </div>
     <div id="tweets"></div>
+    <div class="chart-container" style="position: relative; height:40vh; width:40vw">
+        <canvas id="myChart"></canvas>
+    </div>
     <script src="css/material-components-web/dist/material-components-web.js"></script>
     <script>
         mdc.autoInit()
         loadTweets();
+
+
+        // const dataset = findMostCommon(
+        //     ["this", "is", "sample", "text", "hi", "my", "name", "is", "bob", "I", "like", "text,", "text", ",text"]
+        // );
     </script>
 </body>
 
