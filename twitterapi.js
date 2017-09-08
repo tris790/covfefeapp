@@ -3,6 +3,7 @@ const auth = require("./auth/auth.json");
 
 class TwitterClient {
   init() {
+    this.username = "realdonaldtrump";
     const secret = `${auth.Twitter_Consumer_Key}:${auth.Twitter_Consumer_Key_Secret}`;
     const base64 = `${new Buffer(secret).toString("base64")}`;
     console.log("secret", secret, "base", base64);
@@ -27,7 +28,19 @@ class TwitterClient {
     const count = postCount ? `&count=${postCount}` : "";
     console.log(this.bearerToken);
     return await request({
-      uri: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=realdonaldtrump&exclude_replies=true&include_rts=false&tweet_mode=extended${max}${count}`,
+      uri: `https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=${this
+        .username}&exclude_replies=true&include_rts=false&tweet_mode=extended${max}${count}`,
+      headers: {
+        Authorization: this.bearerToken
+      },
+      json: true
+    });
+  }
+
+  async search(keyword) {
+    return await request({
+      uri: `https://api.twitter.com/1.1/search/tweets.json?q=${keyword} from:${this
+        .username}&count=100&exclude_replies=true&include_rts=false`,
       headers: {
         Authorization: this.bearerToken
       },

@@ -62,3 +62,10 @@ a:hover {
   border-radius: 25px;
   margin-right: 25px;
 }
+
+/*Tweets*/
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

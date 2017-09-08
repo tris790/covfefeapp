@@ -16,13 +16,28 @@ app.use(express.static("public"));
 app.use("/fetch", (req, res) => {
   const { max, count } = req.query;
   console.log("max:", max, "count:", count);
-  twitterClient.fetch(max, count).then(data =>
-    res.send({
-      post_count: data.length,
-      last_id: data[data.length - 1].id,
-      content: data
+  twitterClient
+    .fetch(max, count)
+    .then(data =>
+      res.send({
+        post_count: data.length,
+        last_id: data[data.length - 1].id,
+        content: data
+      })
+    )
+    .catch(err => console.log(err));
+});
+app.use("/search", (req, res) => {
+  const { keyword } = req.query;
+  twitterClient
+    .search(keyword)
+    .then(data => {
+      res.send({
+        post_count: data.statuses.length,
+        content: data
+      });
     })
-  );
+    .catch(err => console.log(err));
 });
 app.use("/auth", (req, res) => {
   res.send(twitterClient.getBearerToken());

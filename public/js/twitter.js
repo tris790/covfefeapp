@@ -46,14 +46,17 @@ const createCardFromTweet = tweet => {
 
 const loadTweets = () => {
   const req = fetchTweets().then(data => {
+    const tweetCount = 1;
     // Affichage des tweets
-    const tweetResult = data.content.map(tweet => createCardFromTweet(tweet));
+    const tweetResult = data.content
+      .slice(0, tweetCount)
+      .map(tweet => createCardFromTweet(tweet));
     document.getElementById("tweets").innerHTML = tweetResult.join("");
 
     // Display chart
     const mostCommon = findMostCommon(
       tweetsToOneString(data.content),
-      25,
+      10,
       4,
       true
     );
