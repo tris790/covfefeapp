@@ -8,15 +8,17 @@
 
 ## Installation
 
-<b>git clone</b> https://github.com/tris790/covfefeapp.git 
+<b>run: </b>git clone https://github.com/tris790/covfefeapp.git 
 </br>
-<b>Download and install Current version:</b> https://nodejs.org/en/
+<b>download and install Current version:</b> https://nodejs.org/en/
 </br>
-<b>npm</b> install
+<b>run:</b> npm install
 </br>
-<b>node</b> server.js
+<b>get your keys:</b> https://apps.twitter.com/
 </br>
-<b>Goto:</b> http://localhost:3000/fetch
+<b>run: </b>node server.js
+</br>
+<b>navigate to: </b>http://localhost:3000
 </br>
 
 ## Contributors
