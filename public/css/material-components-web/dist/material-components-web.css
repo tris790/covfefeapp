@@ -788,7 +788,7 @@
   -webkit-tap-highlight-color: transparent;
   /* @alternate */
   color: #3f51b5;
-  color: var(--mdc-theme-primary, #3f51b5); }
+  color: var(--mdc-theme-primary, #4ab3f4); }
   .mdc-button--primary:not(.mdc-ripple-upgraded):hover::before, .mdc-button--primary:not(.mdc-ripple-upgraded):focus::before, .mdc-button--primary:not(.mdc-ripple-upgraded):active::after {
     -webkit-transition-duration: 85ms;
             transition-duration: 85ms;
@@ -909,7 +909,7 @@
     -webkit-tap-highlight-color: transparent;
     /* @alternate */
     color: #3f51b5;
-    color: var(--mdc-theme-primary, #3f51b5); }
+    color: var(--mdc-theme-primary, #4ab3f4); }
     .mdc-button--theme-dark .mdc-button--primary:not(.mdc-ripple-upgraded):hover::before, .mdc-button--theme-dark .mdc-button--primary:not(.mdc-ripple-upgraded):focus::before, .mdc-button--theme-dark .mdc-button--primary:not(.mdc-ripple-upgraded):active::after,
     .mdc-theme--dark .mdc-button--primary:not(.mdc-ripple-upgraded):hover::before,
     .mdc-theme--dark .mdc-button--primary:not(.mdc-ripple-upgraded):focus::before,

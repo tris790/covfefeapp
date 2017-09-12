@@ -43,7 +43,7 @@ const initChart = chart => {
     options: {
       title: {
         display: true,
-        text: "Words"
+        text: `Top ${chart.data.length} words used by Trump`
       }
     }
   });
@@ -66,4 +66,14 @@ const getColors = () => {
   ];
 };
 
-const blacklist = ["http", "https", "will", "with", "that", "have", "more"];
+const blacklist = [
+  "http",
+  "https",
+  "will",
+  "with",
+  "that",
+  "have",
+  "more",
+  "just",
+  "this"
+];

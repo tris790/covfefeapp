@@ -1,12 +1,12 @@
-/* Global */
-/* body {
-  background: #e6ecf0;
-  color: #14171a;
-  font-size: 14px;
-  line-height: 20px;
-  overflow-y: scroll;
-} */
-
+/* Theme */
+:root {
+  --mdc-theme-primary: #4ab3f4;
+  --mdc-theme-primary-light: #86e5ff;
+  --mdc-theme-primary-dark: #0084c1;
+  --mdc-theme-secondary: #ff4081;
+  --mdc-theme-secondary-light: #ff87b0;
+  --mdc-theme-secondary-dark: #f80054;
+}
 /* Buttons */
 .twitter-btn {
   background-color: #4ab3f4;
@@ -63,9 +63,57 @@ a:hover {
   margin-right: 25px;
 }
 
+/* Textfield */
+.mdc-textfield {
+  margin: 5px auto;
+  max-width: 800px;
+}
+
+.mdc-textfield__input {
+  margin: 5px auto;
+  max-width: 800px;
+}
+
 /*Tweets*/
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column wrap;
+  flex-grow: 0;
+  flex-basis: 0;
+}
+
+.horizontal {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.keyword-container {
+  margin: 5px auto;
+  max-width: 500px;
+}
+
+.keyword {
+  margin: 5px;
+}
+
+.highlighted {
+  background: var(--mdc-theme-primary);
+}
+
+.mdc-card--tweet {
+  margin: 5px auto;
+  max-width: 800px;
+}
+
+/*Chart*/
+.chart-container {
+  width: 40%;
+}
+
+@media (max-width: 750px) {
+  .chart-container {
+    width: 100%;
+  }
 }

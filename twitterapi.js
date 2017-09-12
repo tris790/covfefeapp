@@ -40,7 +40,7 @@ class TwitterClient {
   async search(keyword) {
     return await request({
       uri: `https://api.twitter.com/1.1/search/tweets.json?q=${keyword} from:${this
-        .username}&count=100&exclude_replies=true&include_rts=false`,
+        .username}&count=100&exclude_replies=true&include_rts=false&tweet_mode=extended`,
       headers: {
         Authorization: this.bearerToken
       },

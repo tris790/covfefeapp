@@ -17,11 +17,11 @@
         <span class="twitter-text">Fetch</span>
     </button> -->
 
-    <h2 class="mdc-typography--display2 centered">Covfefe Tweets</h2>
-    <form method="get" action="/search" onsubmit="event.preventDefault(); loadTweetsFromSearch();">
+    <h2 class="mdc-typography--display2 centered">Searching Tweet</h2>
+    <form method="get" action="/search">
         <div class="centered">
             <div class="mdc-textfield mdc-textfield--fullwidth" data-mdc-auto-init="MDCTextfield">
-                <input id="recherche" type="text" class="mdc-textfield__input" title="Search with the Twitter API (7 days only)">
+                <input id="recherche" type="text" class="mdc-textfield__input">
                 <label for="recherche" class="mdc-textfield__label">Search</label>
             </div>
         </div>
@@ -32,15 +32,8 @@
             <button type="button" class="mdc-button mdc-snackbar__action-button"></button>
         </div>
     </div>
-
-    <h3 class="centered">Search</h3>
-    <div id="suggested" class="horizontal centered keyword-container">
-        <h2 class="centered">...Loading</h2>
-    </div>
-    <div id="searched"></div>
-    <h3 class="centered">Latest</h3>
-    <div id="tweets">
-        <h2 class="centered">...Loading</h2>
+    <div id="tweets" class="centered">
+        <h2>...Loading</h2>
     </div>
     <div class="centered">
         <div class="chart-container" style="position: relative;">
