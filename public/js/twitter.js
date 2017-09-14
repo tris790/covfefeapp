@@ -61,7 +61,7 @@ const createSuggestionFromKeyword = keyword => {
 
 const loadTweets = () => {
   const req = fetchTweets().then(data => {
-    const tweetCount = 10;
+    const tweetCount = 5;
     // Affichage des tweets
     const tweetResult = data.content
       .slice(0, tweetCount)
@@ -108,6 +108,8 @@ const loadTweetsFromSearch = async word => {
     const tweetResult = data.content.statuses
       .slice(0, tweetCount)
       .reduce((prev, cur) => prev + createCardFromTweet(cur, keyword), "");
-    document.getElementById("searched").innerHTML = tweetResult;
+    const searched = document.getElementById("searched");
+    searched.innerHTML = tweetResult;
+    document.getElementById("recherche").scrollIntoView();
   });
 };

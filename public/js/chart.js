@@ -47,11 +47,20 @@ const initChart = chart => {
       }
     }
   });
+  document.getElementById(chart.id).onclick = function(evt) {
+    var activePoints = myPieChart.getElementsAtEvent(evt);
+    if (activePoints[0]) {
+      const keyword = activePoints[0]._model.label;
+      console.log(keyword);
+      loadTweetsFromSearch(keyword);
+    }
+    // use _datasetIndex and _index from each element of the activePoints array
+  };
 };
 
 const getColors = () => {
   return [
-    "##56e2cf",
+    "#56e2cf",
     "#56aee2",
     "#5668e2",
     "#8a56e2",

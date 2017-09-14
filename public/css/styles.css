@@ -110,6 +110,8 @@ a:hover {
 /*Chart*/
 .chart-container {
   width: 40%;
+  position: relative;
+  user-select: none;
 }
 
 @media (max-width: 750px) {

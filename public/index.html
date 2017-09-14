@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#4ab3f4">
     <title>Covfefe</title>
+    <link rel="icon" href="images/icons/icon-72x72.png">
     <link rel="stylesheet" href="css/material-components-web/dist/material-components-web.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="shortcut icon" href="images/icons/icon-72x72.png">
@@ -12,11 +13,6 @@
 </head>
 
 <body>
-    <!-- <h1>Twitter button</h1>
-    <button onclick="fetchTweets()" class="twitter-btn">
-        <span class="twitter-text">Fetch</span>
-    </button> -->
-
     <h2 class="mdc-typography--display2 centered">Covfefe Tweets</h2>
     <form method="get" action="/search" onsubmit="event.preventDefault(); loadTweetsFromSearch();">
         <div class="centered">
@@ -38,12 +34,12 @@
         <h2 class="centered">...Loading</h2>
     </div>
     <div id="searched"></div>
-    <h3 class="centered">Latest</h3>
+    <h3 class="centered">Latest tweets</h3>
     <div id="tweets">
         <h2 class="centered">...Loading</h2>
     </div>
     <div class="centered">
-        <div class="chart-container" style="position: relative;">
+        <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>
     </div>
