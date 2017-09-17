@@ -2,10 +2,11 @@ const findMostCommon = (arr, number, wordLength) => {
   // Word, Count
   const wordCounts = new Map();
   arr.forEach(word => {
+    const wordLower = word.toLowerCase();
     // Ajout seulement si > wordlength et n'est pas dans la blacklist
-    if (word.length >= wordLength && !blacklist.includes(word)) {
-      const currentWordCount = wordCounts.get(word.toLowerCase()) || 0;
-      wordCounts.set(word.toLowerCase(), currentWordCount + 1);
+    if (word.length >= wordLength && !blacklist.includes(wordLower)) {
+      const currentWordCount = wordCounts.get(wordLower) || 0;
+      wordCounts.set(wordLower, currentWordCount + 1);
     }
   });
 
