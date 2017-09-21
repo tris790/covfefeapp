@@ -4,7 +4,7 @@
 
 > A simple project that interacts with the twitter API to get data from Trumps' Twitter account
 
-<img src="<img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" style="max-width:100%" /> " style="max-width:100%" /> 
+<img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" style="max-width:100%" />
 
 ## Installation
 
